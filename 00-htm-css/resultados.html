@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de busqueda</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>DevJobs</h1>
+        <nav>
+           
+            <a href="index.html">Inicio</a>
+            <a href="resultados.html">Empleos</a>
+            <a href="#">Empresas</a>
+            <a href="#">Resultados</a>
+         </nav>       
+            <div>
+                <a href="#">Subir CV</a>
+                <img src="./login.png" alt="" width="60">
+            </div>
+       
+    </header>
+    <main>
+        <section>
+                
+                <h1>Encuentra tu proximo trabajo</h1>
+                <p>Explora miles de oportunidades en el sector técnologico</p>
+            
+            <form role="search" id="search-form">
+                <div class="serch">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-cloud-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 18.004h-4.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M20.2 20.2l1.8 1.8" /></svg>
+                <input type="text" placeholder="Buscar ofertas ahora">
+                </div>
+            </form>
+            <div class="filtros">
+                <button id="filtro-btn">
+                    Tecnología
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
+                </button>
+                <button id="filtro-btn">
+                    Ubicación
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
+                </button>
+                <button id="filtro-btn">
+                    Tipo de Contrato
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
+                </button>
+                <button id="filtro-btn">
+                    Nivel de Experiencia
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
+                </button>
+            </div>
+         </section>
+         <h2 id="title-re">Resultados de busqueda</h2>
+         <section id="resultados">
+            
+
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3 class="job-title">Ingeniero de Software</h3>
+                        
+                        <p class="job-meta">Tech Solutions Inc. | Remoto</p>
+                        
+                        <p class="job-description">
+                            Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.
+                        </p>
+                    </div>
+
+                    <div class="job-actions">
+                        <button class="btn-aplicar">Aplicar</button>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3 class="job-title">Analista de Datos</h3>
+                        <p class="job-meta">Data Driven Co. | Ciudad de México</p>
+                        <p class="job-description">
+                            Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.
+                        </p>
+                    </div>
+                    <div class="job-actions">
+                        <button class="btn-aplicar">Aplicar</button>
+                    </div>
+                </div>
+         </section>
+         <section class="paginacion">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 20l-3 -8l3 -8" /></svg>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 4l3 8l-3 8" /></svg>
+         </section>
+    </main>
+    <footer>
+  <small>© 2025 DevJobs. Todos los derechos reservados.</small>
+</footer>
+</body>
+</html>
