@@ -370,7 +370,6 @@ article {
 .btn-aplicar {
     /* 1. Evita que el botón crezca */
     flex-shrink: 0; 
-    
     background-color: #007bff; /* Color azul, similar al ejemplo */
     color: white;
     border: none;
@@ -380,6 +379,7 @@ article {
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s;
+    
 }
 
 .btn-aplicar:hover {
@@ -522,4 +522,11 @@ select{
   color: white;
   text-decoration: underline;
   cursor: default;
+}
+
+.btn-aplicar {
+   &.selec{
+    background-color: #28a756; /* Color verde para indicar que ya se aplicó */
+    cursor: default; /* Cambia el cursor para indicar que no es clickeable */
+  }
 }
