@@ -9,18 +9,22 @@
 </head>
 <body>
     <header>
-        <h1>DevJobs</h1>
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-codesandbox"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 7.5v9l-4 2.25l-4 2.25l-4 -2.25l-4 -2.25v-9l4 -2.25l4 -2.25l4 2.25z" /><path d="M12 12l4 -2.25l4 -2.25" /><path d="M12 12l0 9" /><path d="M12 12l-4 -2.25l-4 -2.25" /><path d="M20 12l-4 2v4.75" /><path d="M4 12l4 2l0 4.75" /><path d="M8 5.25l4 2.25l4 -2.25" /></svg>
+            DevJobs</h1>
         <nav>
            
             <a href="index.html">Inicio</a>
             <a href="resultados.html">Empleos</a>
             <a href="#">Empresas</a>
             <a href="#">Resultados</a>
-         </nav>       
+
             <div>
                 <a href="#">Subir CV</a>
-                <img src="./login.png" alt="" width="60">
             </div>
+             <img src="./login.png" alt="" width="60">
+         </nav>       
+            
        
     </header>
     <main>
@@ -33,24 +37,85 @@
                 <div class="serch">
                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-cloud-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 18.004h-4.343c-2.572 -.004 -4.657 -2.011 -4.657 -4.487c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M20.2 20.2l1.8 1.8" /></svg>
                 <input type="text" placeholder="Buscar ofertas ahora">
+                <button type="submit">Buscar</button>
                 </div>
+                
             </form>
+
             <div class="filtros">
                 <button id="filtro-btn">
                     Tecnología
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
+                
+                <select name="" id="">
+                    <option value="">Todas</option>
+                    <option value="">JavaScript</option>
+                    <option value="">Python</option>
+                    <option value="">Java</option>
+                    <option value="">C#</option>
+                    <option value="">Ruby</option>
+                    <option value="">PHP</option>
+                    <option value="">C++</option>
+                    <option value="">TypeScript</option>
+                    <option value="">Swift</option>
+                    <option value="">Kotlin</option>
+                    <option value="">Go</option>
+                    <option value="">Rust</option>
+                    <option value="">Dart</option>
+                    <option value="">Scala</option>
+                    <option value="">Perl</option>
+                    <option value="">Haskell</option>
+                    <option value="">Lua</option>
+                    <option value="">Objective-C</option>
+                    <option value="">R</option>
+                    <option value="">Elixir</option>
+                    <option value="">Clojure</option>
+                    <option value="">Erlang</option>
+                    <option value="">F#</option>
+                    <option value="">Shell Scripting</option>
+                </select>
                 </button>
                 <button id="filtro-btn">
                     Ubicación
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
+                <select name="" id="">
+                    <option value="">Todas</option>
+                    <option value="">Remoto</option>
+                    <option value="">Presencial</option>
+                    <option value="">Híbrido</option>
+                    <option value="">Estados Unidos</option>
+                    <option value="">Canadá</option>
+                    <option value="">Reino Unido</option>
+                    <option value="">Alemania</option>
+                    <option value="">Francia</option>
+                    <option value="">España</option>
+                    <option value="">México</option>
+                    <option value="">Argentina</option>
+                    <option value="">Colombia</option>
+                    <option value="">Brasil</option>
+                    <option value="">Australia</option>
+                    <option value="">India</option>
+                </select>
                 </button>
                 <button id="filtro-btn">
                     Tipo de Contrato
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
+                <select name="" id="">
+                    <option value="">Todos</option>
+                    <option value="">Tiempo Completo</option>
+                    <option value="">Medio Tiempo</option>
+                    <option value="">Contrato</option>
+                    <option value="">Freelance</option>
+                    <option value="">Pasantía</option>
+                </select>
                 </button>
                 <button id="filtro-btn">
                     Nivel de Experiencia
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
+                <select name="Experiencia" id="">
+                    <option value="">Todos</option>
+                    <option value="">Junior</option>
+                    <option value="">Semi-Senior</option>
+                    <option value="">Senior</option>
+                    <option value="">Lead</option>
+                    <option value="">Manager</option>
+                </select>
                 </button>
             </div>
          </section>
@@ -86,16 +151,29 @@
                         <button class="btn-aplicar">Aplicar</button>
                     </div>
                 </div>
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3 class="job-title">Analista de Datos</h3>
+                        <p class="job-meta">Data Driven Co. | Ciudad de México</p>
+                        <p class="job-description">
+                            Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.
+                        </p>
+                    </div>
+                    <div class="job-actions">
+                        <button class="btn-aplicar">Aplicar</button>
+                    </div>
+                </div>
          </section>
-         <section class="paginacion">
+         <nav section class="paginacion">
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 20l-3 -8l3 -8" /></svg>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 4l3 8l-3 8" /></svg>
-         </section>
+         </nav>
     </main>
     <footer>
   <small>© 2025 DevJobs. Todos los derechos reservados.</small>

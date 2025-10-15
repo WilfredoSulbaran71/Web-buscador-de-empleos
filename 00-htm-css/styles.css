@@ -41,13 +41,20 @@ body {
 
 /* Títulos principales */
 h1 {
-  font-size: 2.25rem;
-  font-weight: 900;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   line-height: 1.2;
-  text-wrap: balance;
-}
-
+  display: flex;
+  align-items: center;
+  
+  svg{
+    width: 1.5em;
+    height: 1.5em;
+    color: var(--primary-light);
+    display: flex;
+  }
+  }
+  
 h1 + p {
   text-wrap: balance;
   margin-bottom: 2rem
@@ -64,7 +71,7 @@ header {
   gap: 2rem;
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-primary);
   }
@@ -74,6 +81,7 @@ header {
 /* Navegación del header a otras páginas */
 nav {
   align-items: center;
+  
   gap: 1rem;
   display: flex;
 
@@ -92,6 +100,7 @@ nav {
 
 /* Botones del Header */
 header div a {
+
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   background-color: #334155;
@@ -136,8 +145,6 @@ form {
   padding-inline: 1rem;
  
 }
-
-
 
 form > div {
   display: flex;
@@ -402,6 +409,17 @@ article {
   gap: 0.5rem;
   flex: 1;
 }
+select{
+  background: #94a3b8;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+
+
+}
 
 .filtros{
   display: flex;
@@ -475,4 +493,33 @@ article {
       color: var(--primary);
     }
   }
+  a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: var(--text-secondary);
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    
+    &:hover, &:focus {
+      background-color: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      outline: none;
+    }
+  }
+}
+
+/* Navegación de página activa */
+.paginacion .active{
+  background-color: var(--primary-light);
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+  cursor: default;
 }
