@@ -530,3 +530,125 @@ select{
     cursor: default; /* Cambia el cursor para indicar que no es clickeable */
   }
 }
+
+
+/* Estilo para la pagina de empleos*/
+main {
+    /* Define un ancho máximo para el contenido para que no ocupe toda la pantalla */
+    max-width: 1200px;
+    /* Centra el contenedor 'main' horizontalmente en la ventana */
+    margin-left: auto;
+    margin-right: auto;
+    /* Asegura que no haya márgenes/rellenos indeseados en la parte superior */
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-inline: 1rem; /* Añade un poco de espacio en los lados en móvil */
+}
+
+/* Opcional: Centrar la sección de detalle en caso de que main sea más grande */
+.job-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.job-card {
+    display: flex; /* Habilita Flexbox */
+    justify-content: space-between; /* Empuja 'job-info' a la izquierda y 'job-actions' a la derecha */
+    align-items: center; /* Centra los elementos (texto y botón) verticalmente */
+    
+    background-color: var(--card-bg); /* Usa el color de fondo de tu variable */
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 25px; /* Separa la tarjeta de la descripción */
+    
+    /* Asegura que el texto y el botón no se peguen */
+    width: 100%; 
+}
+
+.job-info {
+    flex-grow: 1; /* Permite que la información del empleo ocupe el espacio restante */
+    padding-right: 30px; /* Espacio entre el texto y el botón */
+}
+
+.job-actions {
+    flex-shrink: 0; /* Evita que el botón se comprima */
+}
+
+/* Títulos con fuente más grande que los párrafos */
+.job-title {
+    font-size: 1.5rem; /* Título principal de la oferta */
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.job-meta {
+    font-size: 1.2rem; /* Subtítulo/Metadatos */
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.job-description h2, 
+.job-description h3 {
+    text-align: left; /* Asegura la alineación de todos los títulos */
+    font-size: 1.5rem; /* Tamaño grande para los subtítulos */
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Alineación a la izquierda para todo el texto dentro de la descripción */
+.job-description p,
+.job-description ul {
+    text-align: left;
+    font-size: 0.9rem; /* Tamaño estándar para los párrafos */
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+/* 1. ESTILO Y LIMPIEZA DE LAS MIGAS */
+.migas {
+    /* Limpia todos los márgenes y rellenos para eliminar el espacio vertical */
+    margin: 0 !important;
+    padding: 20px 0 !important; /* Puedes añadir un padding vertical pequeño si quieres separarlo */
+    
+    /* Asegura que el texto se alinee a la izquierda del contenedor <main> */
+    text-align: left; 
+    
+    /* Fuente y Color (si lo quieres diferente a la herencia del body) */
+    font-size: 0.9rem; 
+    color: var(--text-muted); 
+}
+
+/* 2. ESTILO DEL ENLACE DENTRO DE LAS MIGAS */
+.migas a {
+    color: var(--primary-light);
+    text-decoration: none; 
+}
+.migas a:hover, .migas a:focus { 
+    text-decoration: underline;
+    outline: none;
+}
+
+.job-description ul {
+    /* 1. ELIMINAR EL ÍCONO DE LA LISTA (el punto por defecto) */
+    list-style: none; 
+    
+    /* 2. ELIMINAR LA INDENTACIÓN LATERAL POR DEFECTO */
+    padding-left: 0;
+    
+    /* Opcional: Eliminar cualquier margen superior/inferior por si acaso */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 3. Ajustar el espacio entre los elementos de la lista (opcional) */
+.job-description li {
+    margin-bottom: 8px; /* Pequeño espacio entre cada punto */
+    line-height: 1.6; /* Mejora la lectura del texto */
+}
+.job-description li svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: var(--primary-light);
+    vertical-align: middle; /* Alinea el ícono con el texto */
+}
