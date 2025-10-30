@@ -421,12 +421,12 @@ select{
 
 }
 
-.filtros{
+.search-filtros{
   display: flex;
   gap: 1rem;
   margin-left: 1rem;
 
-  #filtro-btn{
+  .filtro-btn{
     display: flex;
     align-items: center;
     gap: 0.25rem;
@@ -550,7 +550,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
 }
-.job-card {
+.job-listing-card {
     display: flex; /* Habilita Flexbox */
     justify-content: space-between; /* Empuja 'job-info' a la izquierda y 'job-actions' a la derecha */
     align-items: center; /* Centra los elementos (texto y botón) verticalmente */

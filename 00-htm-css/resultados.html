@@ -43,80 +43,80 @@
                 
             </form>
 
-            <div class="filtros">
-                <button id="filtro-btn">
+            <div class="search-filtros">
+                <button class="filtro-btn">
                     Tecnología
                 
-                <select name="" id="">
-                    <option value="">Todas</option>
-                    <option value="">JavaScript</option>
-                    <option value="">Python</option>
-                    <option value="">Java</option>
-                    <option value="">C#</option>
-                    <option value="">Ruby</option>
-                    <option value="">PHP</option>
-                    <option value="">C++</option>
-                    <option value="">TypeScript</option>
-                    <option value="">Swift</option>
-                    <option value="">Kotlin</option>
-                    <option value="">Go</option>
-                    <option value="">Rust</option>
-                    <option value="">Dart</option>
-                    <option value="">Scala</option>
-                    <option value="">Perl</option>
-                    <option value="">Haskell</option>
-                    <option value="">Lua</option>
-                    <option value="">Objective-C</option>
-                    <option value="">R</option>
-                    <option value="">Elixir</option>
-                    <option value="">Clojure</option>
-                    <option value="">Erlang</option>
-                    <option value="">F#</option>
-                    <option value="">Shell Scripting</option>
-                </select>
+                            <select name="technology" id="filter-technology">
+                                <option value="">Todas</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="Python">Python</option>
+                                <option value="java">Java</option>
+                                <option value="c">C#</option>
+                                <option value="ruby">Ruby</option>
+                                <option value="php">PHP</option>
+                                <option value="c++">C++</option>
+                                <option value="TypeScript">TypeScript</option>
+                                <option value="Swift">Swift</option>
+                                <option value="Kotlin">Kotlin</option>
+                                <option value="Go">Go</option>
+                                <option value="Rust">Rust</option>
+                                <option value="Dart">Dart</option>
+                                <option value="Scala">Scala</option>
+                                <option value="Perl">Perl</option>
+                                <option value="Haskell">Haskell</option>
+                                <option value="Lua">Lua</option>
+                                <option value="Obje-c">Objective-C</option>
+                                <option value="R">R</option>
+                                <option value="Elixir">Elixir</option>
+                                <option value="Clojure">Clojure</option>
+                                <option value="Erlang">Erlang</option>
+                                <option value="F#">F#</option>
+                                <option value="Shell-S">Shell Scripting</option>
+                            </select>
                 </button>
-                <button id="filtro-btn">
+                <button class="filtro-btn">
                     Ubicación
-                <select name="" id="">
-                    <option value="">Todas</option>
-                    <option value="">Remoto</option>
-                    <option value="">Presencial</option>
-                    <option value="">Híbrido</option>
-                    <option value="">Estados Unidos</option>
-                    <option value="">Canadá</option>
-                    <option value="">Reino Unido</option>
-                    <option value="">Alemania</option>
-                    <option value="">Francia</option>
-                    <option value="">España</option>
-                    <option value="">México</option>
-                    <option value="">Argentina</option>
-                    <option value="">Colombia</option>
-                    <option value="">Brasil</option>
-                    <option value="">Australia</option>
-                    <option value="">India</option>
-                </select>
+                        <select name="location" id="filter-location">
+                            <option value="">Todas</option>
+                            <option value="Remoto">Remoto</option>
+                            <option value="Presente">Presencial</option>
+                            <option value="Hibrido">Híbrido</option>
+                            <option value="EEUU">Estados Unidos</option>
+                            <option value="CA">Canadá</option>
+                            <option value="RU">Reino Unido</option>
+                            <option value="Alem">Alemania</option>
+                            <option value="Franc">Francia</option>
+                            <option value="ES">España</option>
+                            <option value="Mx">México</option>
+                            <option value="Argen">Argentina</option>
+                            <option value="Col">Colombia</option>
+                            <option value="Bra">Brasil</option>
+                            <option value="Aus">Australia</option>
+                            <option value="Indi">India</option>
+                        </select>
                 </button>
-                <button id="filtro-btn">
+                <button class="filtro-btn">
                     Tipo de Contrato
-                <select name="" id="">
-                    <option value="">Todos</option>
-                    <option value="">Tiempo Completo</option>
-                    <option value="">Medio Tiempo</option>
-                    <option value="">Contrato</option>
-                    <option value="">Freelance</option>
-                    <option value="">Pasantía</option>
-                </select>
+                        <select name="modalidad" id="filter-modalidad">
+                            <option value="">Todos</option>
+                            <option value="Full-time">Tiempo Completo</option>
+                            <option value="Midel-time">Medio Tiempo</option>
+                            <option value="Contrato">Contrato</option>
+                            <option value="Free">Freelance</option>
+                            <option value="Pasant">Pasantía</option>
+                        </select>
                 </button>
-                <button id="filtro-btn">
+                <button class="filtro-btn">
                     Nivel de Experiencia
-                <select name="Experiencia" id="">
-                    <option value="">Todos</option>
-                    <option value="">Junior</option>
-                    <option value="">Semi-Senior</option>
-                    <option value="">Senior</option>
-                    <option value="">Lead</option>
-                    <option value="">Manager</option>
-                </select>
+                        <select name="Experiencia" id="filter-experiencia">
+                            <option value="">Todos</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Semi-J">Semi-Senior</option>
+                            <option value="Senior">Senior</option>
+                            <option value="Lead">Lead</option>
+                            <option value="manager">Manager</option>
+                        </select>
                 </button>
             </div>
          </section>
@@ -124,7 +124,11 @@
          <section id="resultados" class="jobs-listings">
             
 
-                <div class="job-card">
+                <article class="job-listing-card"
+                                data-technology="JavaScript"
+                                data-location="Remoto"
+                                data-modalidad="Full-time"
+                                data-experiencia="Senior">
                     <div class="job-info">
                         <h3 class="job-title">Ingeniero de Software</h3>
                         
@@ -138,9 +142,13 @@
                     <div class="job-actions">
                         <button class="btn-aplicar seleccionado">Aplicar</button>
                     </div>
-                </div>
+                </article>
 
-                <div class="job-card">
+                <article class="job-listing-card"
+                                data-technology="Python"
+                                data-location="Presente"
+                                data-modalidad="Contrato"
+                                data-experiencia="Junior">
                     <div class="job-info">
                         <h3 class="job-title">Analista de Datos</h3>
                         <p class="job-meta">Data Driven Co. | Ciudad de México</p>
@@ -151,8 +159,13 @@
                     <div class="job-actions">
                         <button class="btn-aplicar seleccionado">Aplicar</button>
                     </div>
-                </div>
-                <div class="job-card">
+                </article>
+
+                <article class="job-listing-card"
+                                data-technology="php"
+                                data-location="Presencial"
+                                data-modalidad="Contrato"
+                                data-experiencia="Junior">
                     <div class="job-info">
                         <h3 class="job-title">Analista de Datos</h3>
                         <p class="job-meta">Data Driven Co. | Ciudad de México</p>
@@ -163,8 +176,9 @@
                     <div class="job-actions">
                         <button class="btn-aplicar seleccionado">Aplicar</button>
                     </div>
-                </div>
+                </article>
          </section>
+
          <nav section class="paginacion">
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 20l-3 -8l3 -8" /></svg>
             <a href="#" class="active">1</a>
